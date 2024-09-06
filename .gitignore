@@ -37,6 +37,7 @@ Thumbs.db
 
 # Logs
 *.log
+report.html
 
 # Distribution / packaging
 .Python

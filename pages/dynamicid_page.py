@@ -1,18 +1,15 @@
 from .base_page import BasePage
 from playwright.sync_api import Locator
 
-class HomePage(BasePage):
+class DynamicidPage(BasePage):
     def __init__(self, page):
         super().__init__(page)
-        self.path = ""
-        self.alternate_path = "/home"
-        self.title = self.page.locator("h1")
+        self.path = "dynamicid"
+        self.title = self.page.locator("h3")
+        self.dynamicid_button = self.page.locator("button.btn.btn-primary")
 
     def navigate(self):
         super().navigate(self.path)
-
-    def navigate_alternate_path(self):
-        super().navigate(self.alternate_path)
 
     def get_title(self) -> Locator:
         return self.title
