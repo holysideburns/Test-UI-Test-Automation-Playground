@@ -19,7 +19,7 @@ def page(browser):
 def browser_context_args(browser_context_args):
     return {
         **browser_context_args,
-        "headless": Config.HEADLESS,
+        "headless": True,
         "viewport": {
             "width": 1920,
             "height": 1080,
