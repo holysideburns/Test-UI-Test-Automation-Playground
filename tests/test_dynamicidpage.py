@@ -22,5 +22,3 @@ def test_dynamicid_button(page):
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
     dynamicid_page.dynamicid_button.click()
-
-
