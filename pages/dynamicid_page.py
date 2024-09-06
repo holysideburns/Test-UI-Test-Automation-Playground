@@ -1,7 +1,7 @@
 from .base_page import BasePage
 from playwright.sync_api import Locator
 
-class DynamicidPage(BasePage):
+class DynamicIdPage(BasePage):
     def __init__(self, page):
         super().__init__(page)
         self.path = "dynamicid"
