@@ -1,5 +1,5 @@
 """
-Script Name: test_hiddenlayers.py
+Script Name: test_hidden_layers_page.py
 Description: This script tests the "Hidden Layers" subpage at http://www.uitestingplayground.com/hiddenlayers.
 Challenge: Make sure that the test can not interact with the green button after it has been clicked.
 Comment: Not happy with this solution using 'try', but since the green button doesn't actually change state, I see no other way.
@@ -7,7 +7,7 @@ Comment: Not happy with this solution using 'try', but since the green button do
 
 import pytest
 from playwright.sync_api import expect
-from pages.hiddenlayers_page import HiddenLayersPage
+from pages.hidden_layers_page import HiddenLayersPage
 
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")

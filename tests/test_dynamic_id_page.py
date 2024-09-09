@@ -1,12 +1,12 @@
 """
-Script Name: test_dynamicidpage.py
+Script Name: test_dynamic_id_page.py
 Description: This script tests the "Dynamic ID" page on http://www.uitestingplayground.com/dynamicid.
 Challenge: Interact with a button that uses a dynamic ID without using the ID.
 """
 
 import pytest
 from playwright.sync_api import expect
-from pages.dynamicid_page import DynamicIdPage
+from pages.dynamic_id_page import DynamicIdPage
 
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")

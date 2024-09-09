@@ -1,12 +1,12 @@
 """
-Script Name: test_classattributepage.py
+Script Name: test_class_attribute_page.py
 Description: This script tests the "Class Attribute" page at http://www.uitestingplayground.com/classattr.
 Challenge: Craft a reliable XPath selector that works on an element with more than one class reference.
 """
 
 import pytest
 from playwright.sync_api import expect
-from pages.classattribute_page import ClassAttributePage
+from pages.class_attribute_page import ClassAttributePage
 
 @pytest.mark.classattribute
 #@pytest.mark.skip(reason="Skipping this test for now.")

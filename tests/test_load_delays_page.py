@@ -1,12 +1,12 @@
 """
-Script Name: test_loaddelays.py
+Script Name: test_load_delays_page.py
 Description: This script tests the "Load Delays" page at http://www.uitestingplayground.com/loaddelay.
 Challenge: Ensure that the test handles long loading times.
 """
 
 import pytest
 from playwright.sync_api import expect
-from pages.loaddelays_page import LoadDelaysPage
+from pages.load_delays_page import LoadDelaysPage
 
 @pytest.mark.loaddelays
 #@pytest.mark.skip(reason="Skipping this test for now.")

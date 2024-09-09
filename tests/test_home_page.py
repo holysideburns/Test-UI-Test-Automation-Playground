@@ -1,5 +1,5 @@
 """
-Script Name: test_homepage.py
+Script Name: test_home_page.py
 Description: This script tests the "home" page on http://www.uitestingplayground.com/.
 Challenge: None, but added  a couple of tests anyway.
 """
