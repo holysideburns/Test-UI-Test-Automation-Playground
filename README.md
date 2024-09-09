@@ -3,6 +3,7 @@
 This is a training project using Playwright with Python and Pytest that focuses on practicing test automation techniques on www.uitestingplayground.com.
 
 ## Project structure
+```
 project-root/
 ├── pages/              # Page Object Model files to be used by tests
    ├── base_page.py     # Parent Page Object Model
@@ -37,7 +38,7 @@ project-root/
 ├── .env (.env.example) # Environment file, mainly for credentials
 ├── requirements.txt    # Required Python modules to run project
 └──
-
+```
 ## Usage
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
