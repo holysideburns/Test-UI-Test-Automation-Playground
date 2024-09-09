@@ -7,8 +7,8 @@ This is a training project using Playwright with Python and Pytest that focuses 
 project-root/
 ├── pages/                    # Page Object Model files to be used by tests
    ├── base_page.py           # Parent Page Object Model
-   ├── classattribute_page.py # Tests [/classattr](http://www.uitestingplayground.com/classattr)
-   ├── 
+   ├── classattribute_page.py # Tests `/classattr`, marker `classattribute`
+   ├── dynamicid_page.py      # Tests `/dynamicid`, marker `dynamicid`
    ├── 
    ├── 
    ├── 
