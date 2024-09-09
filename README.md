@@ -5,9 +5,9 @@ This is a training project using Playwright with Python and Pytest that focuses 
 ## Project structure
 ```
 project-root/
-├── pages/              # Page Object Model files to be used by tests
-   ├── base_page.py     # Parent Page Object Model
-   ├── 
+├── pages/                    # Page Object Model files to be used by tests
+   ├── base_page.py           # Parent Page Object Model
+   ├── classattribute_page.py # Tests [/classattr](http://www.uitestingplayground.com/classattr)
    ├── 
    ├── 
    ├── 
@@ -20,7 +20,7 @@ project-root/
    ├── 
    ├── 
    └── 
-├── tests/              # Files containint tests to be run by `pytest`
+├── tests/                    # Files containint tests to be run by `pytest`
    ├── 
    ├── 
    ├── 
@@ -32,11 +32,11 @@ project-root/
    ├── 
    └── 
 ├── utils/
-└── config/             # Configuration files
-   └── config.py        # Configuration file
-├── pytest.ini          # Configuration file for `pytest`
-├── .env (.env.example) # Environment file, mainly for credentials
-├── requirements.txt    # Required Python modules to run project
+└── config/                   # Configuration files
+   └── config.py              # Configuration file
+├── pytest.ini                # Configuration file for `pytest`
+├── .env (.env.example)       # Environment file, mainly for credentials
+├── requirements.txt          # Required Python modules to run project
 └──
 ```
 ## Usage
