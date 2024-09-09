@@ -22,4 +22,5 @@ def test_blue_button(page) -> None:
     classattribute_page = ClassAttributePage(page)
     classattribute_page.navigate()
     classattribute_page.click_blue_button()
+    expect(classattribute_page.get_title()).to_be_visible()
     
