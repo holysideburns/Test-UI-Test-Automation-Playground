@@ -14,7 +14,7 @@ project-root/
    ├── load_delays_page.py             # POM for `/loaddelay`
    ├── ajax_data_page.py               # POM for `/ajax`
    ├── client_side_delay_page.py       # POM for `/clientdelay`
-   ├── 
+   ├── click_page.py                   # POM for `/click`
    ├── 
    ├── 
    ├── 
@@ -31,7 +31,7 @@ project-root/
    ├── test_load_delays_page.py        # Tests `Load Delays`, marker `loaddelays`
    ├── test_ajax_data_page.py          # Tests `AJAX Data`, marker `ajaxdata`
    ├── test_client_side_delay_page.py  # Tests `Client Side Delay`, marker `clientsidedelay`
-   ├── 
+   ├── test_click_page.py              # Tests `Click`, marker `click`
    ├── 
    ├── 
    ├── 
