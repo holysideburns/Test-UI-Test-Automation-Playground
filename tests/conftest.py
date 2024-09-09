@@ -1,11 +1,10 @@
-import pytest
-from playwright.sync_api import Page, expect
-from config.config import Config
 import sys, os
+import pytest
+from config.config import Config
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-def pytest_configure(config):
+def pytest_configure(config) -> None:
     """Validate configuration before tests run"""
     Config.validate()
 
@@ -16,7 +15,7 @@ def page(browser):
     page.close()
 
 @pytest.fixture(scope="session")
-def browser_context_args(browser_context_args):
+def browser_context_args(browser_context_args) -> None:
     return {
         **browser_context_args,
         "headless": True,

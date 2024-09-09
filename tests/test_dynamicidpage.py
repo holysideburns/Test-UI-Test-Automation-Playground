@@ -11,14 +11,14 @@ from config.config import Config
 
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_dynamicidpage_title(page):
+def test_dynamicidpage_title(page) -> None:
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
     expect(dynamicid_page.get_title()).to_have_text("Dynamic ID")
 
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_dynamicid_button(page):
+def test_dynamicid_button(page) -> None:
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
     dynamicid_page.dynamicid_button.click()

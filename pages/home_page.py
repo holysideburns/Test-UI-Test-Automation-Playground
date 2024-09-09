@@ -8,10 +8,10 @@ class HomePage(BasePage):
         self.alternate_path = "/home"
         self.title = self.page.locator("h1")
 
-    def navigate(self):
+    def navigate(self) -> None:
         super().navigate(self.path)
 
-    def navigate_alternate_path(self):
+    def navigate_alternate_path(self) -> None:
         super().navigate(self.alternate_path)
 
     def get_title(self) -> Locator:
