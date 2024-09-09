@@ -8,6 +8,7 @@ import pytest
 from playwright.sync_api import expect
 from pages.ajax_data_page import AjaxDataPage
 
+""" Test Scenario: Verify that the page title is 'AJAX Data'. """
 @pytest.mark.ajaxdata
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_ajax_data_page_title(page) -> None:
@@ -15,6 +16,7 @@ def test_ajax_data_page_title(page) -> None:
     ajax_data_page.navigate()
     expect(ajax_data_page.get_title()).to_have_text("AJAX Data")
 
+""" Test Scenario: Verify that the AJAX message appears """
 @pytest.mark.ajaxdata
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_ajax_data_delay(page) -> None:

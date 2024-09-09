@@ -8,6 +8,7 @@ import pytest
 from playwright.sync_api import expect
 from pages.load_delays_page import LoadDelaysPage
 
+""" Test Scenario: Verify that he page title is 'Load Delays'. """
 @pytest.mark.loaddelays
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_load_delays_page_title(page) -> None:
@@ -15,6 +16,7 @@ def test_load_delays_page_title(page) -> None:
     load_delays_page.navigate()
     expect(load_delays_page.get_title()).to_have_text("Load Delays")
 
+""" Test Scenario: Verify that the button can be clicked once it finishes loading. """
 @pytest.mark.loaddelays
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_delayed_button(page) -> None:

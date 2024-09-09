@@ -9,6 +9,7 @@ import pytest
 from playwright.sync_api import expect
 from pages.hidden_layers_page import HiddenLayersPage
 
+""" Test Scenario: Verify that he page title is 'Hidden Layers'. """
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_hidden_layers_page_title(page) -> None:
@@ -16,6 +17,7 @@ def test_hidden_layers_page_title(page) -> None:
     hidden_layers_page.navigate()
     expect(hidden_layers_page.get_title()).to_have_text("Hidden Layers")
 
+""" Test Scenario: Verify that the green button can not be clicked twice. """
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_green_button(page) -> None:

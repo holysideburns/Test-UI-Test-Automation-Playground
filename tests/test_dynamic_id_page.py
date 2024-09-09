@@ -8,6 +8,7 @@ import pytest
 from playwright.sync_api import expect
 from pages.dynamic_id_page import DynamicIdPage
 
+""" Test Scenario: Verify that the page title is 'Dynamic ID'. """
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_dynamic_id_page_title(page) -> None:
@@ -15,6 +16,7 @@ def test_dynamic_id_page_title(page) -> None:
     dynamicid_page.navigate()
     expect(dynamicid_page.get_title()).to_have_text("Dynamic ID")
 
+""" Test Scenario: Verify that the button can be clicked without using its ID. """
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_dynamic_id_button(page) -> None:

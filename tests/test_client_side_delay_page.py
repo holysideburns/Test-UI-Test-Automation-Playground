@@ -8,6 +8,7 @@ import pytest
 from playwright.sync_api import expect
 from pages.client_side_delay_page import ClientSideDelayPage
 
+""" Test Scenario: Verify that the page title is 'Client Side Delay'. """
 @pytest.mark.clientsidedelay
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_client_side_delay_page_title(page) -> None:
@@ -15,6 +16,7 @@ def test_client_side_delay_page_title(page) -> None:
     client_side_delay_page.navigate()
     expect(client_side_delay_page.get_title()).to_have_text("Client Side Delay")
 
+""" Test Scenario: Verify that the JavaScript message appears . """
 @pytest.mark.clientsidedelay
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_javascript_data_delay(page) -> None:

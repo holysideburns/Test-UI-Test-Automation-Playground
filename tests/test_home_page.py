@@ -9,7 +9,7 @@ from playwright.sync_api import expect
 from config.config import Config
 from pages.home_page import HomePage
 
-
+""" Test Scenario: Verify that he page title is 'UI Test AutomationPlayground'. """
 @pytest.mark.homepage
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_home_page_title(page) -> None:
@@ -17,6 +17,7 @@ def test_home_page_title(page) -> None:
     home_page.navigate()
     expect(home_page.get_title()).to_have_text("UI Test AutomationPlayground")
 
+""" Test Scenario: Verify that he page is accessable at '/home'. """
 @pytest.mark.homepage
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_alternate_path(page) -> None:

@@ -8,7 +8,7 @@ import pytest
 from playwright.sync_api import expect
 from pages.click_page import ClickPage
 
-""" Test Scenario: Verify the page title is 'Click'. """
+""" Test Scenario: Verify that the page title is 'Click'. """
 @pytest.mark.click
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_click_page_title(page) -> None:
