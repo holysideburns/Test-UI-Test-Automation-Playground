@@ -21,7 +21,7 @@ project-root/
    ├── 
    ├── 
    └── 
-├── tests/                    # Files containint tests to be run by `pytest`
+├── tests/                    # Files containing tests to be run by `pytest`
    ├── test_homepage.py       # Tests site home page, marker `homepage`
    ├── test_dynamicid.py      # Tests `Dynamic ID`, marker `dynamicid`
    ├── test_classattribute.py # Tests `Class Attribute`, marker `classattribute`
