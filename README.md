@@ -5,10 +5,11 @@ This is a training project using Playwright with Python and Pytest that focuses 
 ## Project structure
 ```
 project-root/
-├── pages/                    # Page Object Model files to be used by tests
-   ├── base_page.py           # Parent Page Object Model
-   ├── classattribute_page.py # Tests `/classattr`, marker `classattribute`
-   ├── dynamicid_page.py      # Tests `/dynamicid`, marker `dynamicid`
+├── pages/                    # Page Object Model (POM) files to be used by tests
+   ├── base_page.py           # Parent POM
+   ├── home_page.py           # POM for `/home`
+   ├── dynamicid_page.py      # POM for `/dynamicid`
+   ├── classattribute_page.py # POM for `/classattr`
    ├── 
    ├── 
    ├── 
@@ -21,8 +22,9 @@ project-root/
    ├── 
    └── 
 ├── tests/                    # Files containint tests to be run by `pytest`
-   ├── 
-   ├── 
+   ├── test_homepage.py       # Tests site home page, marker `homepage`
+   ├── test_dynamicid.py      # Tests `Dynamic ID`, marker `dynamicid`
+   ├── test_classattribute.py # Tests `Class Attribute`, marker `classattribute`
    ├── 
    ├── 
    ├── 
@@ -33,21 +35,21 @@ project-root/
    └── 
 ├── utils/
 └── config/                   # Configuration files
-   └── config.py              # Configuration file
-├── pytest.ini                # Configuration file for `pytest`
+   └── config.py              # General configuration file for the project
 ├── .env (.env.example)       # Environment file, mainly for credentials
-├── requirements.txt          # Required Python modules to run project
-└──
+├── pytest.ini                # Configuration file for `pytest`
+├── README.md                 # You're looking at it
+└── requirements.txt          # Required Python modules to run project
 ```
+
 ## Usage
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
 3. Copy `.env.example` to `.env`
-4. Run tests: `pytest` or `pytest -m <marker>` with one or more page markers in the following format:
-   - `homepage`
-   - `dynamicid`
-   - `clientsidedelay`
-   - Example: `pytest -m "homepage or dynamicid"`
+4. Run tests using `pytest` or `pytest -m <marker>` with one or more test markers, like this:
+      - `pytest -m "homepage"`
+      - `pytest -m "not homepage"`
+      - `pytest -m "homepage or dynamicid"`
 
 ## Authors
 - [@holysideburns (Jimmy Pettersson)](https://github.com/holysideburns)
