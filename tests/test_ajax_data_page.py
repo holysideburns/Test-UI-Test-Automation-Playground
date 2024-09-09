@@ -9,7 +9,7 @@ from playwright.sync_api import expect
 from pages.ajax_data_page import AjaxData
 
 @pytest.mark.ajaxdata
-@pytest.mark.skip(reason="Skipping this test for now.")
+#@pytest.mark.skip(reason="Skipping this test for now.")
 def test_ajax_data_page_title(page) -> None:
     ajax_data_page = AjaxData(page)
     ajax_data_page.navigate()
