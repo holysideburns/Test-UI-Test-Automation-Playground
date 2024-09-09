@@ -5,11 +5,13 @@ This is my training project using Playwright with Python and Pytest that focuses
 ## Project structure
 ```
 project-root/
-├── pages/                    # Page Object Model (POM) files to be used by tests
-   ├── base_page.py           # Parent POM
-   ├── home_page.py           # POM for `/home`
-   ├── dynamicid_page.py      # POM for `/dynamicid`
-   ├── classattribute_page.py # POM for `/classattr`
+├── pages/                       # Page Object Model (POM) files to be used by tests
+   ├── base_page.py              # Parent POM
+   ├── home_page.py              # POM for `/home`
+   ├── dynamicid_page.py         # POM for `/dynamicid`
+   ├── classattribute_page.py    # POM for `/classattr`
+   ├── hiddenlayers_page.py      # POM for `/hiddenlayers`
+   ├── 
    ├── 
    ├── 
    ├── 
@@ -21,10 +23,15 @@ project-root/
    ├── 
    ├── 
    └── 
-├── tests/                    # Files containing tests to be run by `pytest`
-   ├── test_homepage.py       # Tests site home page, marker `homepage`
-   ├── test_dynamicid.py      # Tests `Dynamic ID`, marker `dynamicid`
-   ├── test_classattribute.py # Tests `Class Attribute`, marker `classattribute`
+├── tests/                       # Files containing tests to be run by `pytest`
+   ├── test_homepage.py          # Tests site home page, marker `homepage`
+   ├── test_dynamicid.py         # Tests `Dynamic ID`, marker `dynamicid`
+   ├── test_classattribute.py    # Tests `Class Attribute`, marker `classattribute`
+   ├── test_hiddenlayers.py      # Tests `Hidden Layers`, marker `hiddenlayers`
+   ├── 
+   ├── 
+   ├── 
+   ├── 
    ├── 
    ├── 
    ├── 
