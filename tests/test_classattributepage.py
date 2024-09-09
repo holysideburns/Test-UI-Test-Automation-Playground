@@ -7,7 +7,6 @@ Challenge: Craft a reliable XPath selector that works on an element with more th
 import pytest
 from playwright.sync_api import expect
 from pages.classattribute_page import ClassAttributePage
-from config.config import Config
 
 @pytest.mark.classattribute
 #@pytest.mark.skip(reason="Skipping this test for now.")
