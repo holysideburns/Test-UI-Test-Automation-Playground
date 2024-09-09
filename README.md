@@ -5,13 +5,13 @@ This is my training project using Playwright with Python and Pytest that focuses
 ## Project structure
 ```
 project-root/
-├── pages/                       # Page Object Model (POM) classes to be used by tests
-   ├── base_page.py              # Parent POM
-   ├── home_page.py              # POM for `/home`
-   ├── dynamicid_page.py         # POM for `/dynamicid`
-   ├── classattribute_page.py    # POM for `/classattr`
-   ├── hiddenlayers_page.py      # POM for `/hiddenlayers`
-   ├── loaddelays_page.py        # POM for `/loaddelay`
+├── pages/                          # Page Object Model (POM) classes to be used by tests
+   ├── base_page.py                 # Parent POM
+   ├── home_page.py                 # POM for `/home`
+   ├── dynamic_id_page.py           # POM for `/dynamicid`
+   ├── class_attribute_page.py      # POM for `/classattr`
+   ├── hidden_layers_page.py        # POM for `/hiddenlayers`
+   ├── load_delays_page.py          # POM for `/loaddelay`
    ├── 
    ├── 
    ├── 
@@ -23,12 +23,12 @@ project-root/
    ├── 
    ├── 
    └── 
-├── tests/                       # Files containing tests to be run by `pytest`
-   ├── test_homepage.py          # Tests site home page, marker `homepage`
-   ├── test_dynamicid.py         # Tests `Dynamic ID`, marker `dynamicid`
-   ├── test_classattribute.py    # Tests `Class Attribute`, marker `classattribute`
-   ├── test_hiddenlayers.py      # Tests `Hidden Layers`, marker `hiddenlayers`
-   ├── test_loaddelays.py        # Tests `Load Delays`, marker `loaddelays`
+├── tests/                          # Files containing tests to be run by `pytest`
+   ├── test_home_page.py            # Tests site home page, marker `homepage`
+   ├── test_dynamic_id_page.py      # Tests `Dynamic ID`, marker `dynamicid`
+   ├── test_class_attribute_page.py # Tests `Class Attribute`, marker `classattribute`
+   ├── test_hidden_layers_page.py   # Tests `Hidden Layers`, marker `hiddenlayers`
+   ├── test_load_delays_page.py     # Tests `Load Delays`, marker `loaddelays`
    ├── 
    ├── 
    ├── 
