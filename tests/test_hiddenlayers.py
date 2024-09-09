@@ -18,12 +18,14 @@ def test_hiddenlayers_title(page) -> None:
 
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_hidden_button(page) -> None:
+def test_green_button(page) -> None:
     hiddenlayers_page = HiddenLayersPage(page)
     hiddenlayers_page.navigate()
     hiddenlayers_page.click_green_button()
     try:
         hiddenlayers_page.click_green_button()
+        # Failure
+        raise AssertionError("Green button should not be clickable after the initial click.")
     except:
         # Success
         pass
