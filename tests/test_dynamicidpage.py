@@ -7,7 +7,6 @@ Challenge: Interact with a button that uses a dynamic ID without using the ID.
 import pytest
 from playwright.sync_api import expect
 from pages.dynamicid_page import DynamicIdPage
-from config.config import Config
 
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")
