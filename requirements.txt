@@ -4,3 +4,4 @@ pytest-playwright==0.5.1
 python-dotenv==1.0.1
 reporter==0.5.3
 reporter-html1==0.9.1
+pytest-xdist==3.6.1

@@ -57,6 +57,10 @@ project-root/
       - `pytest -m "not homepage"`
       - `pytest -m "classattribute or dynamicid"`
 
+### Running tests in parallel
+I've also included `pytest-xdist` in the requirements, which enables you to run tests in parallel.
+Use the option `-n X`, where X is the number of processes to use.
+
 ## Author
 - [@holysideburns (Jimmy Pettersson)](https://github.com/holysideburns)
 
