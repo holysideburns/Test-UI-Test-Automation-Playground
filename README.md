@@ -49,7 +49,7 @@ project-root/
 4. Run tests using `pytest` or `pytest -m <marker>` with one or more test markers, like this:
       - `pytest -m "homepage"`
       - `pytest -m "not homepage"`
-      - `pytest -m "homepage or dynamicid"`
+      - `pytest -m "classattribute or dynamicid"`
 
 ## Authors
 - [@holysideburns (Jimmy Pettersson)](https://github.com/holysideburns)
