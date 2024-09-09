@@ -1,7 +1,7 @@
 from .base_page import BasePage
 from playwright.sync_api import Locator
 
-class AjaxData(BasePage):
+class AjaxDataPage(BasePage):
     def __init__(self, page) -> None:
         super().__init__(page)
         self.path = "ajax"

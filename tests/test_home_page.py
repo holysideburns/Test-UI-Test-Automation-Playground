@@ -6,8 +6,9 @@ Challenge: None, but added  a couple of tests anyway.
 
 import pytest
 from playwright.sync_api import expect
-from pages.home_page import HomePage
 from config.config import Config
+from pages.home_page import HomePage
+
 
 @pytest.mark.homepage
 #@pytest.mark.skip(reason="Skipping this test for now.")
