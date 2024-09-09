@@ -1,6 +1,6 @@
 
 # Test - UI Test Automation Playground
-This is a training project using Playwright with Python and Pytest that focuses on practicing test automation techniques on www.uitestingplayground.com.
+This is my training project using Playwright with Python and Pytest that focuses on practicing test automation techniques on www.uitestingplayground.com.
 
 ## Project structure
 ```
