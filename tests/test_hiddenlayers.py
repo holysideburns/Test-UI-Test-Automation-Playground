@@ -1,6 +1,6 @@
 """
 Script Name: test_hiddenlayers.py
-Description: This script tests the "Hidden Layers" subpage on http://www.uitestingplayground.com/.
+Description: This script tests the "Hidden Layers" subpage at http://www.uitestingplayground.com/hiddenlayers.
 Challenge: Make sure that the test can not interact with the green button after it has been clicked.
 Comment: Not happy with this solution using ´try´, but since the green button doesn't actually change state, I see no other way.
 """
@@ -11,7 +11,7 @@ from pages.hiddenlayers_page import HiddenLayersPage
 
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_hiddenlayers_title(page) -> None:
+def test_hiddenlayers_page_title(page) -> None:
     hiddenlayers_page = HiddenLayersPage(page)
     hiddenlayers_page.navigate()
     expect(hiddenlayers_page.get_title()).to_have_text("Hidden Layers")

@@ -1,6 +1,6 @@
 """
 Script Name: test_dynamicidpage.py
-Description: This script tests the "Dynamic ID" subpage on http://www.uitestingplayground.com/.
+Description: This script tests the "Dynamic ID" page on http://www.uitestingplayground.com/dynamicid.
 Challenge: Interact with a button that uses a dynamic ID without using the ID.
 """
 
@@ -10,7 +10,7 @@ from pages.dynamicid_page import DynamicIdPage
 
 @pytest.mark.dynamicid
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_dynamicidpage_title(page) -> None:
+def test_dynamicid_page_title(page) -> None:
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
     expect(dynamicid_page.get_title()).to_have_text("Dynamic ID")
