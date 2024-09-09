@@ -10,7 +10,7 @@ from playwright.sync_api import expect
 from pages.hiddenlayers_page import HiddenLayersPage
 
 @pytest.mark.hiddenlayers
-@pytest.mark.skip(reason="Skipping this test for now.")
+#@pytest.mark.skip(reason="Skipping this test for now.")
 def test_hiddenlayers_title(page) -> None:
     hiddenlayers_page = HiddenLayersPage(page)
     hiddenlayers_page.navigate()
