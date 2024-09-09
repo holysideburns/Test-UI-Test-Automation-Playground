@@ -57,9 +57,13 @@ project-root/
       - `pytest -m "not homepage"`
       - `pytest -m "classattribute or dynamicid"`
 
-### Running tests in parallel
+### Running Tests In Parallel
 I've included the optional module `pytest-xdist` in the requirements, which enables you to run tests in parallel.
 Use the option `-n X`, where X is the number of processes to use.
+
+### Test Report Generation
+I've included the optional module `pytest-reporter-html1` in the requirements, which enables the generation of an HTML report after a test run.
+Use the option `--template=html1/index.html --report=report.html` to generate `report.html` in the project root.
 
 ## Author
 - [@holysideburns (Jimmy Pettersson)](https://github.com/holysideburns)
