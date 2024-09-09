@@ -2,7 +2,7 @@
 Script Name: test_hiddenlayers.py
 Description: This script tests the "Hidden Layers" subpage on http://www.uitestingplayground.com/.
 Challenge: Make sure that the test can not interact with the green button after it has been clicked.
-Comment: Not happy with this solution, but since the green button doesn't actually change state, I see no other way.
+Comment: Not happy with this solution using ´try´, but since the green button doesn't actually change state, I see no other way.
 """
 
 import pytest
