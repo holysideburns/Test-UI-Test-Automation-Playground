@@ -40,7 +40,6 @@ project-root/
    ├── 
    ├── 
    └── 
-├── utils/
 └── config/                   # Configuration files
    └── config.py              # General configuration file for the project
 ├── .env (.env.example)       # Environment file, mainly for credentials
