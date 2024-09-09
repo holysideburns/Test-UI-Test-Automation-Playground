@@ -11,19 +11,19 @@ from pages.hidden_layers_page import HiddenLayersPage
 
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_hiddenlayers_page_title(page) -> None:
-    hiddenlayers_page = HiddenLayersPage(page)
-    hiddenlayers_page.navigate()
-    expect(hiddenlayers_page.get_title()).to_have_text("Hidden Layers")
+def test_hidden_layers_page_title(page) -> None:
+    hidden_layers_page = HiddenLayersPage(page)
+    hidden_layers_page.navigate()
+    expect(hidden_layers_page.get_title()).to_have_text("Hidden Layers")
 
 @pytest.mark.hiddenlayers
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_green_button(page) -> None:
-    hiddenlayers_page = HiddenLayersPage(page)
-    hiddenlayers_page.navigate()
-    hiddenlayers_page.click_green_button()
+    hidden_layers_page = HiddenLayersPage(page)
+    hidden_layers_page.navigate()
+    hidden_layers_page.click_green_button()
     try:
-        hiddenlayers_page.click_green_button()
+        hidden_layers_page.click_green_button()
         # Failure
         raise AssertionError("Green button should not be clickable after the initial click.")
     except:

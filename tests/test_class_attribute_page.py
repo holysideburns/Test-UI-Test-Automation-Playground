@@ -10,16 +10,16 @@ from pages.class_attribute_page import ClassAttributePage
 
 @pytest.mark.classattribute
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_classattribute_page_title(page) -> None:
-    classattribute_page = ClassAttributePage(page)
-    classattribute_page.navigate()
-    expect(classattribute_page.get_title()).to_have_text("Class Attribute")
+def test_class_attribute_page_title(page) -> None:
+    class_attribute_page = ClassAttributePage(page)
+    class_attribute_page.navigate()
+    expect(class_attribute_page.get_title()).to_have_text("Class Attribute")
 
 @pytest.mark.classattribute
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_blue_button(page) -> None:
-    classattribute_page = ClassAttributePage(page)
-    classattribute_page.navigate()
-    classattribute_page.click_blue_button()
-    expect(classattribute_page.get_title()).to_be_visible()
+    class_attribute_page = ClassAttributePage(page)
+    class_attribute_page.navigate()
+    class_attribute_page.click_blue_button()
+    expect(class_attribute_page.get_title()).to_be_visible()
     

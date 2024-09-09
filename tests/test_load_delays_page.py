@@ -10,14 +10,14 @@ from pages.load_delays_page import LoadDelaysPage
 
 @pytest.mark.loaddelays
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_loaddelays_page_title(page) -> None:
-    loaddelays_page = LoadDelaysPage(page)
-    loaddelays_page.navigate()
-    expect(loaddelays_page.get_title()).to_have_text("Load Delays")
+def test_load_delays_page_title(page) -> None:
+    load_delays_page = LoadDelaysPage(page)
+    load_delays_page.navigate()
+    expect(load_delays_page.get_title()).to_have_text("Load Delays")
 
 @pytest.mark.loaddelays
 #@pytest.mark.skip(reason="Skipping this test for now.")
 def test_delayed_button(page) -> None:
-    loaddelays_page = LoadDelaysPage(page)
-    loaddelays_page.navigate()
-    loaddelays_page.click_delayed_button()
+    load_delays_page = LoadDelaysPage(page)
+    load_delays_page.navigate()
+    load_delays_page.click_delayed_button()

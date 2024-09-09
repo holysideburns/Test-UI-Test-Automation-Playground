@@ -11,7 +11,7 @@ from config.config import Config
 
 @pytest.mark.homepage
 #@pytest.mark.skip(reason="Skipping this test for now.")
-def test_homepage_title(page) -> None:
+def test_home_page_title(page) -> None:
     home_page = HomePage(page)
     home_page.navigate()
     expect(home_page.get_title()).to_have_text("UI Test AutomationPlayground")
