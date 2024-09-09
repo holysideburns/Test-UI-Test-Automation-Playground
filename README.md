@@ -57,6 +57,6 @@ project-root/
       - `pytest -m "not homepage"`
       - `pytest -m "classattribute or dynamicid"`
 
-## Authors
+## Author
 - [@holysideburns (Jimmy Pettersson)](https://github.com/holysideburns)
 
