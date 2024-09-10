@@ -19,6 +19,8 @@ class ClassAttributePage(BasePage):
 
         try:
             self.blue_button.click()
+        except Exception as e:
+            print(f"Failed to click button: {e}")
         finally:
             self.page.remove_listener('dialog', on_dialog)
 

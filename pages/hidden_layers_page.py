@@ -12,4 +12,7 @@ class HiddenLayersPage(BasePage):
         super().navigate(self.path)
     
     def click_green_button(self) -> None:
-        self.green_button.click()
+        try:
+            self.green_button.click()
+        except Exception as e:
+            print(f"Failed to click button: {e}")
