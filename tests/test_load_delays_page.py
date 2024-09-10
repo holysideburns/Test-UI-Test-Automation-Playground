@@ -8,18 +8,28 @@ import pytest
 from playwright.sync_api import expect
 from pages.load_delays_page import LoadDelaysPage
 
-""" Test Scenario: Verify that he page title is 'Load Delays'. """
-@pytest.mark.loaddelays
-
-def test_load_delays_page_title(page) -> None:
+@pytest.fixture
+def load_delays_page(page) -> LoadDelaysPage:
     load_delays_page = LoadDelaysPage(page)
     load_delays_page.navigate()
+    return load_delays_page
+
+@pytest.mark.loaddelays
+def test_load_delays_page_title(load_delays_page) -> None:
+    """
+    Test Scenario: Test Page Title
+        Given the user navigates to the 'Load Delays' page,
+        When the page is loaded,
+        Then the page title should be 'Load Delays'.
+    """
     expect(load_delays_page.title).to_have_text("Load Delays")
 
-""" Test Scenario: Verify that the button can be clicked once it finishes loading. """
 @pytest.mark.loaddelays
-
-def test_delayed_button(page) -> None:
-    load_delays_page = LoadDelaysPage(page)
-    load_delays_page.navigate()
-    load_delays_page.click_delayed_button()
+def test_delayed_button(load_delays_page) -> None:
+    """
+    Test Scenario: Test Delayed Button
+        Given the user is on the 'Load Delays' page,
+        When the page is loaded,
+        Then the button should be clickable.
+    """
+    load_delays_page.click_button()

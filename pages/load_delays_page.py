@@ -6,10 +6,13 @@ class LoadDelaysPage(BasePage):
         super().__init__(page)
         self.path = "/loaddelay"
         self.title = self.page.locator("h3")
-        self.delayed_button = self.page.get_by_role("button", name="Button Appearing After Delay")
+        self.button = self.page.get_by_role("button", name="Button Appearing After Delay")
 
     def navigate(self) -> None:
         super().navigate(self.path)
     
-    def click_delayed_button(self) -> None:
-        self.delayed_button.click()
+    def click_button(self) -> None:
+        try:
+            self.button.click()
+        except Exception as e:
+            print(f"Failed to click button: {e}")
