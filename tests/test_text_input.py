@@ -8,21 +8,20 @@ import pytest
 from playwright.sync_api import expect
 from pages.text_input_page import TextInput
 
-""" Test Scenario: Verify that the page title is 'Text Input'. """
-@pytest.mark.textinput
-#@pytest.mark.skip(reason="Skipping this test for now.")
-def test_text_input_page_title(page) -> None:
+@pytest.fixture
+def text_input_page(page) -> TextInput:
     text_input_page = TextInput(page)
     text_input_page.navigate()
+    return text_input_page
+
+@pytest.mark.textinput
+def test_text_input_page_title(text_input_page) -> None:
     expect(text_input_page.title).to_have_text("Text Input")
 
-""" Test Scenario: Verify that text can be entered into the textbox 
-    and that clicking the button sets the button name to the text. """
 @pytest.mark.textinput
-#@pytest.mark.skip(reason="Skipping this test for now.")
-def test_text_input(page) -> None:
-    text_input_page = TextInput(page)
-    text_input_page.navigate()
+def test_text_input(text_input_page) -> None:
+    """Test Scenario: Verify that text can be entered into the textbox 
+    and that clicking the button sets the button name to the text."""
     input_value = "Test Value"
     expect(text_input_page.button).not_to_have_text(input_value)
     text_input_page.enter_text(input_value)
