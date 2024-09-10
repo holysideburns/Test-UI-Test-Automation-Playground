@@ -10,7 +10,7 @@ from pages.client_side_delay_page import ClientSideDelayPage
 
 """ Test Scenario: Verify that the page title is 'Client Side Delay'. """
 @pytest.mark.clientsidedelay
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_client_side_delay_page_title(page) -> None:
     client_side_delay_page = ClientSideDelayPage(page)
     client_side_delay_page.navigate()
@@ -18,7 +18,7 @@ def test_client_side_delay_page_title(page) -> None:
 
 """ Test Scenario: Verify that the JavaScript message appears . """
 @pytest.mark.clientsidedelay
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_javascript_data_delay(page) -> None:
     client_side_delay_page = ClientSideDelayPage(page)
     client_side_delay_page.navigate()

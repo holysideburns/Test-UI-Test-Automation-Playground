@@ -10,7 +10,7 @@ from pages.ajax_data_page import AjaxDataPage
 
 """ Test Scenario: Verify that the page title is 'AJAX Data'. """
 @pytest.mark.ajaxdata
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_ajax_data_page_title(page) -> None:
     ajax_data_page = AjaxDataPage(page)
     ajax_data_page.navigate()
@@ -18,7 +18,7 @@ def test_ajax_data_page_title(page) -> None:
 
 """ Test Scenario: Verify that the AJAX message appears """
 @pytest.mark.ajaxdata
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_ajax_data_delay(page) -> None:
     ajax_data_page = AjaxDataPage(page)
     ajax_data_page.navigate()

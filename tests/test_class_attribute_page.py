@@ -10,7 +10,7 @@ from pages.class_attribute_page import ClassAttributePage
 
 """ Test Scenario: Verify that the page title is 'Class Attribute'. """
 @pytest.mark.classattribute
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_class_attribute_page_title(page) -> None:
     class_attribute_page = ClassAttributePage(page)
     class_attribute_page.navigate()
@@ -18,7 +18,7 @@ def test_class_attribute_page_title(page) -> None:
 
 """ Test Scenario: Verify that the blue button can be click using the 'btn-primar' class. """
 @pytest.mark.classattribute
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_blue_button(page) -> None:
     class_attribute_page = ClassAttributePage(page)
     class_attribute_page.navigate()

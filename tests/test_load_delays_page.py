@@ -10,7 +10,7 @@ from pages.load_delays_page import LoadDelaysPage
 
 """ Test Scenario: Verify that he page title is 'Load Delays'. """
 @pytest.mark.loaddelays
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_load_delays_page_title(page) -> None:
     load_delays_page = LoadDelaysPage(page)
     load_delays_page.navigate()
@@ -18,7 +18,7 @@ def test_load_delays_page_title(page) -> None:
 
 """ Test Scenario: Verify that the button can be clicked once it finishes loading. """
 @pytest.mark.loaddelays
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_delayed_button(page) -> None:
     load_delays_page = LoadDelaysPage(page)
     load_delays_page.navigate()

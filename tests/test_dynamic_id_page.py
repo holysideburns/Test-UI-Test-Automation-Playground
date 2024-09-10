@@ -10,7 +10,7 @@ from pages.dynamic_id_page import DynamicIdPage
 
 """ Test Scenario: Verify that the page title is 'Dynamic ID'. """
 @pytest.mark.dynamicid
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_dynamic_id_page_title(page) -> None:
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
@@ -18,7 +18,7 @@ def test_dynamic_id_page_title(page) -> None:
 
 """ Test Scenario: Verify that the button can be clicked without using its ID. """
 @pytest.mark.dynamicid
-#@pytest.mark.skip(reason="Skipping this test for now.")
+
 def test_dynamic_id_button(page) -> None:
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
