@@ -33,5 +33,5 @@ def test_javascript_data_delay(client_side_delay_page) -> None:
         When the user clicks the button,
         Then a message should appear after about 15 seconds.
     """
-    client_side_delay_page.click_javascript_button()
-    expect(client_side_delay_page.javascript_message).to_be_visible(timeout=20000)
+    client_side_delay_page.click_button()
+    expect(client_side_delay_page.message).to_be_visible(timeout=20000)

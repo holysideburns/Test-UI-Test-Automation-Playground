@@ -6,11 +6,11 @@ class ClientSideDelayPage(BasePage):
         super().__init__(page)
         self.path = "/clientdelay"
         self.title = self.page.locator("h3")
-        self.javascript_button = self.page.locator("#ajaxButton")
-        self.javascript_message = self.page.get_by_text("Data calculated on the client side.")
+        self.button = self.page.locator("#ajaxButton")
+        self.message = self.page.get_by_text("Data calculated on the client side.")
 
     def navigate(self) -> None:
         super().navigate(self.path)
     
-    def click_javascript_button(self) -> None:
-        self.javascript_button.click()
+    def click_button(self) -> None:
+        self.button.click()

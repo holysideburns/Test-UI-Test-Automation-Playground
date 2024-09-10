@@ -8,19 +8,29 @@ import pytest
 from playwright.sync_api import expect
 from pages.ajax_data_page import AjaxDataPage
 
-""" Test Scenario: Verify that the page title is 'AJAX Data'. """
-@pytest.mark.ajaxdata
-
-def test_ajax_data_page_title(page) -> None:
+@pytest.fixture
+def ajax_data_page(page) -> AjaxDataPage:
     ajax_data_page = AjaxDataPage(page)
     ajax_data_page.navigate()
+    return ajax_data_page
+
+@pytest.mark.ajaxdata
+def test_ajax_data_page_title(ajax_data_page) -> None:
+    """
+    Test Scenario: Test Page Title
+        Given the user navigates to the 'AJAX Data' page,
+        When the page is loaded,
+        Then the page title should be 'AJAX Data'.
+    """
     expect(ajax_data_page.title).to_have_text("AJAX Data")
 
-""" Test Scenario: Verify that the AJAX message appears """
 @pytest.mark.ajaxdata
-
-def test_ajax_data_delay(page) -> None:
-    ajax_data_page = AjaxDataPage(page)
-    ajax_data_page.navigate()
-    ajax_data_page.click_ajax_button()
-    expect(ajax_data_page.ajax_message).to_be_visible(timeout=20000)
+def test_ajax_data_delay(ajax_data_page) -> None:
+    """
+    Test Scenario: Test Delayed Message
+        Given the user navigates to the 'AJAX Data' page,
+        When the user clicks the button,
+        Then a message should appear after about 15 seconds.
+    """
+    ajax_data_page.click_button()
+    expect(ajax_data_page.message).to_be_visible(timeout=20000)

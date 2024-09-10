@@ -6,11 +6,14 @@ class AjaxDataPage(BasePage):
         super().__init__(page)
         self.path = "/ajax"
         self.title = self.page.locator("h3")
-        self.ajax_button = self.page.locator("#ajaxButton")
-        self.ajax_message = self.page.get_by_text("Data loaded with AJAX get")
+        self.button = self.page.locator("#ajaxButton")
+        self.message = self.page.get_by_text("Data loaded with AJAX get")
 
     def navigate(self) -> None:
         super().navigate(self.path)
     
-    def click_ajax_button(self) -> None:
-        self.ajax_button.click()
+    def click_button(self) -> None:
+        try:
+            self.button.click()
+        except Exception as e:
+            print(f"Failed to click button: {e}")

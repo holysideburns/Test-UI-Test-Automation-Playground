@@ -12,4 +12,7 @@ class ClickPage(BasePage):
         super().navigate(self.path)
 
     def click_button(self) -> None:
-        self.button.click()
+        try:
+            self.button.click()
+        except Exception as e:
+            print(f"Failed to click button: {e}")
