@@ -2,6 +2,23 @@
 # Playwright Test Automation - UI Test Automation Playground
 This is my training project using Playwright with Python and Pytest that focuses on practicing test automation techniques on www.uitestingplayground.com.
 
+## Usage
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Copy `.env.example` to `.env`
+4. Run tests using `pytest` or `pytest -m <marker>` with one or more test markers, like this:
+      - `pytest -m "homepage"`
+      - `pytest -m "not homepage"`
+      - `pytest -m "classattribute or dynamicid"`
+
+### Running Tests In Parallel
+I've included the optional module `pytest-xdist` in the requirements, which enables you to run tests in parallel.
+Use the option `-n X`, where X is the number of processes to use.
+
+### Test Report Generation
+I've included the optional module `pytest-reporter-html1` in the requirements, which enables the generation of an HTML report after a test run.
+Use the option `--template=html1/index.html --report=report.html` to generate `report.html` in the project root.
+
 ## Project structure
 ```
 project-root/
@@ -47,23 +64,6 @@ project-root/
 ├── README.md                 # You're looking at it
 └── requirements.txt          # Required Python modules to run project
 ```
-
-## Usage
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Copy `.env.example` to `.env`
-4. Run tests using `pytest` or `pytest -m <marker>` with one or more test markers, like this:
-      - `pytest -m "homepage"`
-      - `pytest -m "not homepage"`
-      - `pytest -m "classattribute or dynamicid"`
-
-### Running Tests In Parallel
-I've included the optional module `pytest-xdist` in the requirements, which enables you to run tests in parallel.
-Use the option `-n X`, where X is the number of processes to use.
-
-### Test Report Generation
-I've included the optional module `pytest-reporter-html1` in the requirements, which enables the generation of an HTML report after a test run.
-Use the option `--template=html1/index.html --report=report.html` to generate `report.html` in the project root.
 
 ## Author
 - [@holysideburns (Jimmy Pettersson)](https://github.com/holysideburns)
