@@ -9,20 +9,31 @@ import pytest
 from playwright.sync_api import expect
 from pages.hidden_layers_page import HiddenLayersPage
 
+@pytest.fixture
+def hidden_layers_page(page) -> HiddenLayersPage:
+    hidden_layers_page = HiddenLayersPage(page)
+    hidden_layers_page.navigate()
+    return hidden_layers_page    
+
 """ Test Scenario: Verify that he page title is 'Hidden Layers'. """
 @pytest.mark.hiddenlayers
-
-def test_hidden_layers_page_title(page) -> None:
-    hidden_layers_page = HiddenLayersPage(page)
-    hidden_layers_page.navigate()
+def test_hidden_layers_page_title(hidden_layers_page) -> None:
+    """
+    Test Scenario: Test Page Title
+        Given the user navigates to the 'Hidden Layers' page,
+        When the page is loaded,
+        Then the page title should be 'Hidden Layers'.
+    """
     expect(hidden_layers_page.title).to_have_text("Hidden Layers")
 
-""" Test Scenario: Verify that the green button can not be clicked twice. """
 @pytest.mark.hiddenlayers
-
-def test_green_button(page) -> None:
-    hidden_layers_page = HiddenLayersPage(page)
-    hidden_layers_page.navigate()
+def test_green_button(hidden_layers_page) -> None:
+    """
+    Test Scenario: Test Clicking Green Button Twice
+        Given the user navigates to the 'Hidden Layers' page,
+        When they click the Green Button,
+        Then the Greeen Button should not be clickable again.
+    """
     hidden_layers_page.click_green_button()
     try:
         hidden_layers_page.click_green_button()
