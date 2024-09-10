@@ -4,7 +4,7 @@ from playwright.sync_api import Locator
 class HomePage(BasePage):
     def __init__(self, page):
         super().__init__(page)
-        self.path = ""
+        self.path = "/"
         self.alternate_path = "/home"
         self.title = self.page.locator("h1")
 

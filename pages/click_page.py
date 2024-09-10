@@ -4,7 +4,7 @@ from playwright.sync_api import Locator
 class ClickPage(BasePage):
     def __init__(self, page) -> None:
         super().__init__(page)
-        self.path = "click"
+        self.path = "/click"
         self.title = self.page.locator("h3")
         self.button = self.page.locator("#badButton")
 

@@ -4,7 +4,7 @@ from playwright.sync_api import Locator
 class ClientSideDelayPage(BasePage):
     def __init__(self, page) -> None:
         super().__init__(page)
-        self.path = "clientdelay"
+        self.path = "/clientdelay"
         self.title = self.page.locator("h3")
         self.javascript_button = self.page.locator("#ajaxButton")
         self.javascript_message = self.page.get_by_text("Data calculated on the client side.")

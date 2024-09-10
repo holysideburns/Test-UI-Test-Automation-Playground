@@ -4,7 +4,7 @@ from playwright.sync_api import Locator
 class AjaxDataPage(BasePage):
     def __init__(self, page) -> None:
         super().__init__(page)
-        self.path = "ajax"
+        self.path = "/ajax"
         self.title = self.page.locator("h3")
         self.ajax_button = self.page.locator("#ajaxButton")
         self.ajax_message = self.page.get_by_text("Data loaded with AJAX get")

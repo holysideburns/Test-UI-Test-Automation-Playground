@@ -4,7 +4,7 @@ from playwright.sync_api import Locator
 class ClassAttributePage(BasePage):
     def __init__(self, page) -> None:
         super().__init__(page)
-        self.path = "classattr"
+        self.path = "/classattr"
         self.title = self.page.locator("h3")
         self.blue_button = self.page.locator(".btn-primary")
         

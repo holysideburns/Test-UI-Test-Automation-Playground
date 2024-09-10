@@ -14,7 +14,7 @@ from pages.text_input_page import TextInput
 def test_text_input_page_title(page) -> None:
     text_input_page = TextInput(page)
     text_input_page.navigate()
-    expect(text_input_page.get_title()).to_have_text("Text Input")
+    expect(text_input_page.title).to_have_text("Text Input")
 
 """ Test Scenario: Verify that text can be entered into the textbox 
     and that clicking the button sets the button name to the text. """
@@ -24,7 +24,7 @@ def test_text_input(page) -> None:
     text_input_page = TextInput(page)
     text_input_page.navigate()
     input_value = "Test Value"
-    expect(text_input_page.get_button()).not_to_have_text(input_value)
+    expect(text_input_page.button).not_to_have_text(input_value)
     text_input_page.enter_text(input_value)
     text_input_page.click_button()
-    expect(text_input_page.get_button()).to_have_text(input_value)
+    expect(text_input_page.button).to_have_text(input_value)
