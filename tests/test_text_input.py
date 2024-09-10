@@ -6,11 +6,12 @@ Challenge: Ensure that the text box can be interacted with without using an even
 
 import pytest
 from playwright.sync_api import expect
-from pages.text_input_page import TextInput
+from pages.text_input_page import TextInputPage
+
 
 @pytest.fixture
-def text_input_page(page) -> TextInput:
-    text_input_page = TextInput(page)
+def text_input_page(page) -> TextInputPage:
+    text_input_page = TextInputPage(page)
     text_input_page.navigate()
     return text_input_page
 

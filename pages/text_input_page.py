@@ -1,7 +1,7 @@
 from .base_page import BasePage
 from playwright.sync_api import Locator
 
-class TextInput(BasePage):
+class TextInputPage(BasePage):
     def __init__(self, page) -> None:
         super().__init__(page)
         self.path = "/textinput"
