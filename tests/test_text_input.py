@@ -16,12 +16,23 @@ def text_input_page(page) -> TextInput:
 
 @pytest.mark.textinput
 def test_text_input_page_title(text_input_page) -> None:
+    """
+    Test Scenario:
+        Given the user navigates to the 'Text Input' page,
+        When the page is loaded,
+        Then the page title should be 'Text Input'.
+    """
     expect(text_input_page.title).to_have_text("Text Input")
 
 @pytest.mark.textinput
 def test_text_input(text_input_page) -> None:
-    """Test Scenario: Verify that text can be entered into the textbox 
-    and that clicking the button sets the button name to the text."""
+    """
+    Test Scenario:
+        Given the user is on the 'Text Input' page,
+        When they enter 'Test Value' into the textbox,
+        And click the update button,
+        Then the button's text should be updated to 'Test Value'.
+    """
     input_value = "Test Value"
     expect(text_input_page.button).not_to_have_text(input_value)
     text_input_page.enter_text(input_value)
