@@ -17,7 +17,7 @@ project-root/
    ├── click_page.py                   # POM for `/click`
    ├── text_input_page.py              # POM for `/textinput`
    ├── scrollbars_page.py              # POM for `/scrollbars`
-   ├── 
+   ├── dynamic_table_page.py           # POM for `/dynamictable`
    ├── 
    ├── 
    ├── 
@@ -34,7 +34,7 @@ project-root/
    ├── test_click_page.py              # Tests `Click`, marker `click`
    ├── test_text_input_page.py         # Tests `Text Input`, marker ´textinput`
    ├── test_scrollbars_page.py         # Tests `Scrollbars`, marker ´scrollbars`
-   ├── 
+   ├── test_dynamic_table_page.py      # Tests `Dynamic Table`, marker dynamictable`
    ├── 
    ├── 
    ├── 
