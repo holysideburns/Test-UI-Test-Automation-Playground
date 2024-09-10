@@ -17,7 +17,7 @@ def text_input_page(page) -> TextInput:
 @pytest.mark.textinput
 def test_text_input_page_title(text_input_page) -> None:
     """
-    Test Scenario:
+    Test Scenario: Test Page Title
         Given the user navigates to the 'Text Input' page,
         When the page is loaded,
         Then the page title should be 'Text Input'.
@@ -27,7 +27,7 @@ def test_text_input_page_title(text_input_page) -> None:
 @pytest.mark.textinput
 def test_text_input(text_input_page) -> None:
     """
-    Test Scenario:
+    Test Scenario: Test Text Input
         Given the user is on the 'Text Input' page,
         When they enter 'Test Value' into the textbox,
         And click the update button,
