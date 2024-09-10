@@ -10,6 +10,3 @@ class DynamicIdPage(BasePage):
 
     def navigate(self) -> None:
         super().navigate(self.path)
-
-    def get_title(self) -> Locator:
-        return self.title

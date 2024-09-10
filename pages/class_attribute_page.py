@@ -10,9 +10,6 @@ class ClassAttributePage(BasePage):
         
     def navigate(self) -> None:
         super().navigate(self.path)
-
-    def get_title(self) -> Locator:
-        return self.title
     
     def click_blue_button(self) -> None:
         def on_dialog(dialog):

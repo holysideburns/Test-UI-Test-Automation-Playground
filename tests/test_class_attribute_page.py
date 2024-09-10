@@ -14,7 +14,7 @@ from pages.class_attribute_page import ClassAttributePage
 def test_class_attribute_page_title(page) -> None:
     class_attribute_page = ClassAttributePage(page)
     class_attribute_page.navigate()
-    expect(class_attribute_page.get_title()).to_have_text("Class Attribute")
+    expect(class_attribute_page.title).to_have_text("Class Attribute")
 
 """ Test Scenario: Verify that the blue button can be click using the 'btn-primar' class. """
 @pytest.mark.classattribute
@@ -23,5 +23,5 @@ def test_blue_button(page) -> None:
     class_attribute_page = ClassAttributePage(page)
     class_attribute_page.navigate()
     class_attribute_page.click_blue_button()
-    expect(class_attribute_page.get_title()).to_be_visible()
+    expect(class_attribute_page.title).to_be_visible()
     

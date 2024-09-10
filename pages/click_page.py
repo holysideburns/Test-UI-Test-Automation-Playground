@@ -11,11 +11,5 @@ class ClickPage(BasePage):
     def navigate(self) -> None:
         super().navigate(self.path)
 
-    def get_title(self) -> Locator:
-        return self.title
-    
     def click_button(self) -> None:
         self.button.click()
-
-    def get_button(self) -> Locator:
-        return self.button

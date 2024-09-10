@@ -11,12 +11,6 @@ class AjaxDataPage(BasePage):
 
     def navigate(self) -> None:
         super().navigate(self.path)
-
-    def get_title(self) -> Locator:
-        return self.title
     
     def click_ajax_button(self) -> None:
         self.ajax_button.click()
-
-    def get_ajax_message(self) -> Locator:
-        return self.ajax_message

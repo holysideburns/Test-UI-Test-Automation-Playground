@@ -15,7 +15,7 @@ from pages.hidden_layers_page import HiddenLayersPage
 def test_hidden_layers_page_title(page) -> None:
     hidden_layers_page = HiddenLayersPage(page)
     hidden_layers_page.navigate()
-    expect(hidden_layers_page.get_title()).to_have_text("Hidden Layers")
+    expect(hidden_layers_page.title).to_have_text("Hidden Layers")
 
 """ Test Scenario: Verify that the green button can not be clicked twice. """
 @pytest.mark.hiddenlayers

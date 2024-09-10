@@ -14,7 +14,7 @@ from pages.click_page import ClickPage
 def test_click_page_title(page) -> None:
     click_page = ClickPage(page)
     click_page.navigate()
-    expect(click_page.get_title()).to_have_text("Click")
+    expect(click_page.title).to_have_text("Click")
 
 """ Test Scenario: Verify the button can be clicked. """
 @pytest.mark.click
@@ -23,4 +23,4 @@ def test_emulated_mouse_click(page) -> None:
     click_page = ClickPage(page)
     click_page.navigate()
     click_page.click_button()
-    expect(click_page.get_button()).to_have_class('btn btn-success')
+    expect(click_page.button).to_have_class('btn btn-success')

@@ -14,7 +14,7 @@ from pages.ajax_data_page import AjaxDataPage
 def test_ajax_data_page_title(page) -> None:
     ajax_data_page = AjaxDataPage(page)
     ajax_data_page.navigate()
-    expect(ajax_data_page.get_title()).to_have_text("AJAX Data")
+    expect(ajax_data_page.title).to_have_text("AJAX Data")
 
 """ Test Scenario: Verify that the AJAX message appears """
 @pytest.mark.ajaxdata
@@ -23,4 +23,4 @@ def test_ajax_data_delay(page) -> None:
     ajax_data_page = AjaxDataPage(page)
     ajax_data_page.navigate()
     ajax_data_page.click_ajax_button()
-    expect(ajax_data_page.get_ajax_message()).to_be_visible(timeout=20000)
+    expect(ajax_data_page.ajax_message).to_be_visible(timeout=20000)

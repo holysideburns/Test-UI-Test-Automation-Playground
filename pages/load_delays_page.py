@@ -10,9 +10,6 @@ class LoadDelaysPage(BasePage):
 
     def navigate(self) -> None:
         super().navigate(self.path)
-
-    def get_title(self) -> Locator:
-        return self.title
     
     def click_delayed_button(self) -> None:
         self.delayed_button.click()

@@ -14,7 +14,7 @@ from pages.load_delays_page import LoadDelaysPage
 def test_load_delays_page_title(page) -> None:
     load_delays_page = LoadDelaysPage(page)
     load_delays_page.navigate()
-    expect(load_delays_page.get_title()).to_have_text("Load Delays")
+    expect(load_delays_page.title).to_have_text("Load Delays")
 
 """ Test Scenario: Verify that the button can be clicked once it finishes loading. """
 @pytest.mark.loaddelays

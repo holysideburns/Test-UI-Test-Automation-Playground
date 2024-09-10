@@ -15,7 +15,7 @@ from pages.home_page import HomePage
 def test_home_page_title(page) -> None:
     home_page = HomePage(page)
     home_page.navigate()
-    expect(home_page.get_title()).to_have_text("UI Test AutomationPlayground")
+    expect(home_page.title).to_have_text("UI Test AutomationPlayground")
 
 """ Test Scenario: Verify that he page is accessable at '/home'. """
 @pytest.mark.homepage

@@ -15,7 +15,7 @@ project-root/
    ├── ajax_data_page.py               # POM for `/ajax`
    ├── client_side_delay_page.py       # POM for `/clientdelay`
    ├── click_page.py                   # POM for `/click`
-   ├── 
+   ├── text_input_page.py              # POM for `/textinput`
    ├── 
    ├── 
    ├── 
@@ -32,7 +32,7 @@ project-root/
    ├── test_ajax_data_page.py          # Tests `AJAX Data`, marker `ajaxdata`
    ├── test_client_side_delay_page.py  # Tests `Client Side Delay`, marker `clientsidedelay`
    ├── test_click_page.py              # Tests `Click`, marker `click`
-   ├── 
+   ├── test_text_input.py              # Tests `Text Input`, marker ´textinput`
    ├── 
    ├── 
    ├── 

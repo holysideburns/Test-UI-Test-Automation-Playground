@@ -13,6 +13,3 @@ class HomePage(BasePage):
 
     def navigate_alternate_path(self) -> None:
         super().navigate(self.alternate_path)
-
-    def get_title(self) -> Locator:
-        return self.title

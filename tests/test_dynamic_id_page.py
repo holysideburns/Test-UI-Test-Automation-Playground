@@ -14,7 +14,7 @@ from pages.dynamic_id_page import DynamicIdPage
 def test_dynamic_id_page_title(page) -> None:
     dynamicid_page = DynamicIdPage(page)
     dynamicid_page.navigate()
-    expect(dynamicid_page.get_title()).to_have_text("Dynamic ID")
+    expect(dynamicid_page.title).to_have_text("Dynamic ID")
 
 """ Test Scenario: Verify that the button can be clicked without using its ID. """
 @pytest.mark.dynamicid
