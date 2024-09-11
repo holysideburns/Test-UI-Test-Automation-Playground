@@ -16,7 +16,7 @@ I've included the optional module `pytest-xdist` in the requirements, which enab
 Use the option `-n X`, where X is the number of processes to use.
 
 ### Test Report Generation
-I've included the optional module `pytest-reporter-html1` in the requirements, which enables the generation of an HTML report after a test run.
+I've also included the optional module `pytest-reporter-html1` in the requirements, which enables the generation of an HTML report after a test run.
 Use the option `--template=html1/index.html --report=report.html` to generate `report.html` in the project root.
 
 ## Project structure
@@ -57,12 +57,12 @@ project-root/
    ├── 
    ├── 
    └── 
-└── config/                   # Configuration files
+└── config/                   
    └── config.py              # General configuration file for the project
 ├── .env (.env.example)       # Environment file, mainly for credentials
 ├── pytest.ini                # Configuration file for `pytest`
 ├── README.md                 # You're looking at it
-└── requirements.txt          # Required Python modules to run project
+└── requirements.txt          # Required Python modules to run the project
 ```
 
 ## Author
