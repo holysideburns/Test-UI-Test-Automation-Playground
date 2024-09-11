@@ -37,7 +37,7 @@ project-root/
    ├── dynamic_table_page.py           # POM for `/dynamictable`
    ├── verify_text_page.py             # POM for `/verifytext`
    ├── progress_bar_page.py            # POM for `/progressbar`
-   ├── 
+   ├── visibility_page.py              # POM for `/visibility`
    ├── 
    └── 
 ├── tests/                             # Files containing tests to be run by `pytest`
@@ -54,7 +54,7 @@ project-root/
    ├── test_dynamic_table_page.py      # Tests `Dynamic Table`, marker `dynamictable`
    ├── test_verify_text_page.py        # Tests `Verify Text`, marker `verifytext`
    ├── test_progress_bar_page.py       # Tests `Progress Bar`, marker `progressbar`
-   ├── 
+   ├── test_visibility_page.py         # Tests `Visibility`, marker `visibility`
    ├── 
    └── 
 └── config/                   
