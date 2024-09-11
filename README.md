@@ -35,7 +35,7 @@ project-root/
    ├── text_input_page.py              # POM for `/textinput`
    ├── scrollbars_page.py              # POM for `/scrollbars`
    ├── dynamic_table_page.py           # POM for `/dynamictable`
-   ├── 
+   ├── verify_text_page.py             # POM for `/verifytext`
    ├── 
    ├── 
    ├── 
@@ -49,10 +49,10 @@ project-root/
    ├── test_ajax_data_page.py          # Tests `AJAX Data`, marker `ajaxdata`
    ├── test_client_side_delay_page.py  # Tests `Client Side Delay`, marker `clientsidedelay`
    ├── test_click_page.py              # Tests `Click`, marker `click`
-   ├── test_text_input_page.py         # Tests `Text Input`, marker ´textinput`
-   ├── test_scrollbars_page.py         # Tests `Scrollbars`, marker ´scrollbars`
-   ├── test_dynamic_table_page.py      # Tests `Dynamic Table`, marker dynamictable`
-   ├── 
+   ├── test_text_input_page.py         # Tests `Text Input`, marker `textinput`
+   ├── test_scrollbars_page.py         # Tests `Scrollbars`, marker `scrollbars`
+   ├── test_dynamic_table_page.py      # Tests `Dynamic Table`, marker `dynamictable`
+   ├── test_verify_text_page.py        # Tests `Verify Text`, marker `verifytext`
    ├── 
    ├── 
    ├── 
