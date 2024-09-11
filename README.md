@@ -36,7 +36,7 @@ project-root/
    ├── scrollbars_page.py              # POM for `/scrollbars`
    ├── dynamic_table_page.py           # POM for `/dynamictable`
    ├── verify_text_page.py             # POM for `/verifytext`
-   ├── 
+   ├── progress_bar_page.py            # POM for `/progressbar`
    ├── 
    ├── 
    └── 
@@ -53,7 +53,7 @@ project-root/
    ├── test_scrollbars_page.py         # Tests `Scrollbars`, marker `scrollbars`
    ├── test_dynamic_table_page.py      # Tests `Dynamic Table`, marker `dynamictable`
    ├── test_verify_text_page.py        # Tests `Verify Text`, marker `verifytext`
-   ├── 
+   ├── test_progress_bar_page.py       # Tests `Progress Bar`, marker `progressbar`
    ├── 
    ├── 
    └── 
