@@ -58,8 +58,8 @@ project-root/
    ├── test_sample_app_page.py         # Tests `Sample App`, marker `sampleapp`
    └── 
 └── config/                   
-   └── config.py              # General configuration file for the project
-├── .env (.env.example)       # Environment file, mainly for credentials
+   └── config.py              # General configuration file, mainly loads from .env file
+├── .env (.env.example)       # Environment file, mainly for credentials and base URL
 ├── pytest.ini                # Configuration file for `pytest`
 ├── README.md                 # You're looking at it
 └── requirements.txt          # Required Python modules to run the project
