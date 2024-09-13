@@ -38,7 +38,7 @@ project-root/
    ├── verify_text_page.py             # POM for `/verifytext`
    ├── progress_bar_page.py            # POM for `/progressbar`
    ├── visibility_page.py              # POM for `/visibility`
-   ├── 
+   ├── sample_app_page.py              # POM for `/sampleapp`
    └── 
 ├── tests/                             # Files containing tests to be run by `pytest`
    ├── test_home_page.py               # Tests site home page, marker `homepage`
@@ -55,7 +55,7 @@ project-root/
    ├── test_verify_text_page.py        # Tests `Verify Text`, marker `verifytext`
    ├── test_progress_bar_page.py       # Tests `Progress Bar`, marker `progressbar`
    ├── test_visibility_page.py         # Tests `Visibility`, marker `visibility`
-   ├── 
+   ├── test_sample_app_page.py         # Tests `Sample App`, marker `sampleapp`
    └── 
 └── config/                   
    └── config.py              # General configuration file for the project
