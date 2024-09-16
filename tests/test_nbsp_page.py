@@ -25,7 +25,7 @@ def test_nbsp_page_title(nbsp_page) -> None:
     expect(nbsp_page.title).to_have_text("Non-Breaking Space")
 
 @pytest.mark.nbsp
-def test_emulated_mouse_click(nbsp_page) -> None:
+def test_non_breaking_space_button(nbsp_page) -> None:
     """
     Test Scenario: Test Non-Breaking Space Button
        Given the user navigates to the 'Non-Breaking Space' page,
