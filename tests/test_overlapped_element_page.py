@@ -33,6 +33,7 @@ def test_overlapped_input_field(overlapped_element_page) -> None:
         Then the "Name" input field should contain that text.
     """
     test_string = "Jeff"
+    """ Scroll the page manually, since the built in scroll_into_view_if_needed() does not work."""
     overlapped_element_page.page.evaluate("""
         document.querySelector('div[style*="overflow-y: scroll"]').scrollBy(0, 200);
     """)
