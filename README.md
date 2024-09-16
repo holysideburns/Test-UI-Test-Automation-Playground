@@ -39,7 +39,12 @@ project-root/
    ├── progress_bar_page.py            # POM for `/progressbar`
    ├── visibility_page.py              # POM for `/visibility`
    ├── sample_app_page.py              # POM for `/sampleapp`
-   └── 
+   ├── mouse_over_page.py              # POM for `/mouseover`
+   ├── nbsp_page.py                    # POM for `/nbsp`
+   ├── overlapped_element_page.py      # POM for `/overlapped`
+   ├── shadow_dom_page.py              # POM for `/shadowdom`
+   ├── alerts_page.py                  # POM for `/alerts`
+   └── file_upload_page.py             # POM for `/upload`
 ├── tests/                             # Files containing tests to be run by `pytest`
    ├── test_home_page.py               # Tests site home page, marker `homepage`
    ├── test_dynamic_id_page.py         # Tests `Dynamic ID`, marker `dynamicid`
@@ -56,7 +61,12 @@ project-root/
    ├── test_progress_bar_page.py       # Tests `Progress Bar`, marker `progressbar`
    ├── test_visibility_page.py         # Tests `Visibility`, marker `visibility`
    ├── test_sample_app_page.py         # Tests `Sample App`, marker `sampleapp`
-   └── 
+   ├── test_mouse_over_page.py         # Tests `Mouse Over`, marker `mouseover` 
+   ├── test_nbsp_page.py               # Tests `Non-Breaking Space`, marker `nbsp`
+   ├── test_overlapped_page.py         # Tests `Overlapped Element`, marker `overlapped`
+   ├── test_shadow_dom_page.py         # Tests `Shadow DOM`, marker `shadowdom`
+   ├── test_alerts_page.py             # Tests `Alerts`, marker `alerts`
+   └── test_file_upload_page.py        # Tests `File Upload`, marker `fileupload`
 └── config/                   
    └── config.py              # General configuration file, mainly loads from .env file
 ├── .env (.env.example)       # Environment file, mainly for credentials and base URL
