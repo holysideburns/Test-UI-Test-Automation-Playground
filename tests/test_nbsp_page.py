@@ -1,6 +1,6 @@
 """
 Script Name: test_nbsp_page.py
-Description: This script tests the "Click" page at http://www.uitestingplayground.com/nbsp.
+Description: This script tests the "Non-Breaking Space" page at http://www.uitestingplayground.com/nbsp.
 Challenge: Ensure that the button can be clicked eventhough it has a non-breaking space in its text.
 """
 
